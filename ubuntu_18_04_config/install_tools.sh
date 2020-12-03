@@ -19,3 +19,6 @@ source /home/$(whoami)/.bashrc
 echo "set completion-ignore-case on" >> ~/.inputrc
 echo "\"\e[A\": history-search-backward" >> ~/.inputrc
 echo "\"\e[B\": history-search-forward" >> ~/.inputrc
+
+# set ssh keys tutorial
+# https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
