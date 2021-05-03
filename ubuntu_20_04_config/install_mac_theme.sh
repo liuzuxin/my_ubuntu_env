@@ -13,11 +13,11 @@ sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf
 
 mkdir ~/.themes
 tar xf Mojave-dark.tar.xz
-cp -r ./theme/Mojave-dark ~/.themes/
+cp -r Mojave-dark ~/.themes/
 
 mkdir ~/.icons
 tar xf Mojave-CT-Classic.tar.xz
-cp -r ./theme/Mojave-CT-Classic ~/.icons/
+cp -r Mojave-CT-Classic ~/.icons/
 
 unzip -qq macOS\ Cursor\ Set.zip
 mv macOS\ Cursor\ Set ~/.icons/
