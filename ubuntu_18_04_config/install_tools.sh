@@ -12,8 +12,8 @@ sudo apt-get install -y htop
 # install anaconda
 sudo apt-get install -y libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 cd /home/$(whoami)/Downloads
-wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh  # This link might be updated based on your pc plafform
-bash Anaconda3-2020.07-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh  # This link might be updated based on your pc plafform
+bash Anaconda3-2020.11-Linux-x86_64.sh
 source /home/$(whoami)/.bashrc
 
 echo "set completion-ignore-case on" >> ~/.inputrc

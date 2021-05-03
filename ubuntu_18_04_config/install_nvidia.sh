@@ -3,11 +3,17 @@
 # install nvidia-driver and cuda, if you have nvidia GPUs
 sudo ubuntu-drivers autoinstall
 
-# CUDA 11.0
-wget http://developer.download.nvidia.com/compute/cuda/11.0.2/local_installers/cuda_11.0.2_450.51.05_linux.run
-sudo sh cuda_11.0.2_450.51.05_linux.run
+# CUDA 11.1
+cd ~/Downloads
+wget https://developer.download.nvidia.com/compute/cuda/11.1.0/local_installers/cuda_11.1.0_455.23.05_linux.run
+sudo sh cuda_11.1.0_455.23.05_linux.run
+cd -
 
-echo "export CUDA_HOME=/usr/local/cuda-11.0 " >> /home/$(whoami)/.bashrc
+# To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-11.1/bin
+# To uninstall the NVIDIA Driver, run nvidia-uninstall
+
+
+echo "export CUDA_HOME=/usr/local/cuda-11.1 " >> /home/$(whoami)/.bashrc
 echo "export CUDA_INC_PATH=\${CUDA_HOME}/include    " >> /home/$(whoami)/.bashrc
 echo "export CUDA_LIB_PATH=\${CUDA_HOME}/lib64     " >> /home/$(whoami)/.bashrc
 echo "export CUDA_INSTALL_PATH=\${CUDA_HOME}    " >> /home/$(whoami)/.bashrc
