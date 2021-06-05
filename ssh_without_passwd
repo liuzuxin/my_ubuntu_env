@@ -67,3 +67,13 @@ You can confirm that fingerprint by generating a fingerprint from your public ke
 ssh-keygen -l -f customkey_rsa.pub
 2048 aa:42:d4:46:81:43:65:7f:4e:53:94:5f:2f:0d:fd:bd user@server (RSA)
 ```
+## Use ssh config file for your VScode to connect to a remote server
+
+Create an ssh config file `~/.ssh/vs_code_config` like this:
+```
+Host zuliu-desktop (name of the host)
+  User zuliu
+  HostName host-ip
+  IdentityFile ~/.ssh/id_rsa
+```
+Then in VScode, run `Remote-SSH: Open Configuration File` in the commmand palette and select this config file.
