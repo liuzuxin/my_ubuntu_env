@@ -1,0 +1,126 @@
+[global_config]
+  enabled_plugins = CustomCommandsMenu, TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  handle_size = -3
+  inactive_color_offset = 1.0
+  suppress_multiple_term_dialog = True
+  title_transmit_bg_color = "#3e3838"
+  title_transmit_fg_color = "#000000"
+[keybindings]
+  edit_tab_title = <Primary><Alt>comma
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      size = 925, 570
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#0e2424"
+    background_darkness = 0.92
+    background_type = transparent
+    cursor_color = "#e8e8e8"
+    cursor_shape = ibeam
+    font = Liberation Mono 12
+    foreground_color = "#e8e8e8"
+    palette = "#000000:#5a8e1c:#2d5f5f:#cdcd00:#1e90ff:#cd00cd:#00cdcd:#e5e5e5:#4c4c4c:#868e09:#00ff00:#ffff00:#4682b4:#ff00ff:#00ffff:#ffffff"
+    scroll_background = False
+    scrollback_lines = 3000
+    show_titlebar = False
+    use_system_font = False
+  [[Galaxy]]
+    background_color = "#1d2837"
+    background_darkness = 0.68
+    background_type = transparent
+    cursor_color = "#bbbbbb"
+    cursor_shape = ibeam
+    font = Liberation Mono 12
+    foreground_color = "#ffffff"
+    palette = "#000000:#f9555f:#21b089:#fef02a:#589df6:#944d95:#1f9ee7:#bbbbbb:#555555:#fa8c8f:#35bb9a:#ffff55:#589df6:#e75699:#3979bc:#ffffff"
+    scroll_background = False
+    scrollback_lines = 3000
+    show_titlebar = False
+    use_system_font = False
+  [[Github]]
+    background_color = "#f4f4f4"
+    background_darkness = 0.68
+    background_type = transparent
+    cursor_color = "#3f3f3f"
+    cursor_shape = ibeam
+    font = Liberation Mono 12
+    foreground_color = "#3e3e3e"
+    palette = "#3e3e3e:#970b16:#07962a:#f8eec7:#003e8a:#e94691:#89d1ec:#ffffff:#666666:#de0000:#87d5a2:#f1d007:#2e6cba:#ffa29f:#1cfafe:#ffffff"
+    scroll_background = False
+    scrollback_lines = 3000
+    show_titlebar = False
+    use_system_font = False
+  [[Hemisu light]]
+    background_color = "#EFEFEF"
+    background_darkness = 0.68
+    background_type = transparent
+    cursor_color = "#FF0054"
+    cursor_shape = ibeam
+    font = Liberation Mono 12
+    foreground_color = "#444444"
+    palette = "#777777:#FF0055:#739100:#503D15:#538091:#5B345E:#538091:#999999:#999999:#D65E76:#9CC700:#947555:#9DB3CD:#A184A4:#85B2AA:#BABABA"
+    scroll_background = False
+    scrollback_lines = 3000
+    show_titlebar = False
+    use_system_font = False
+  [[Japanesque]]
+    background_color = "#1e1e1e"
+    background_darkness = 0.68
+    background_type = transparent
+    cursor_color = "#edcf4f"
+    cursor_shape = ibeam
+    font = Liberation Mono 12
+    foreground_color = "#f7f6ec"
+    palette = "#343935:#cf3f61:#7bb75b:#e9b32a:#4c9ad4:#a57fc4:#389aad:#fafaf6:#595b59:#d18fa6:#767f2c:#78592f:#135979:#604291:#76bbca:#b2b5ae"
+    scroll_background = False
+    scrollback_lines = 3000
+    show_titlebar = False
+    use_system_font = False
+  [[Nebula]]
+    background_color = "#23262e"
+    background_darkness = 0.68
+    background_type = transparent
+    cursor_color = "#00e8c6"
+    cursor_shape = ibeam
+    font = Liberation Mono 12
+    foreground_color = "#ffffff"
+    palette = "#2e3436:#ff007a:#84ff39:#f3d56e:#7cb7ff:#c74ded:#00e8c6:#d3d7cf:#555753:#ff007a:#84ff39:#f3d56e:#7cb7ff:#c74ded:#00e8c6:#eeeeec"
+    scroll_background = False
+    scrollback_lines = 3000
+    show_titlebar = False
+    use_system_font = False
+  [[Night Owl]]
+    background_color = "#011627"
+    background_darkness = 0.68
+    background_type = transparent
+    cursor_color = "#80a4c2"
+    cursor_color_fg = False
+    cursor_shape = ibeam
+    font = Liberation Mono 12
+    foreground_color = "#d6deeb"
+    palette = "#2e3436:#ef5350:#80cbc4:#ffeb95:#82aaff:#c792ea:#addb67:#d3d7cf:#555753:#ef5350:#80cbc4:#ffeb95:#82aaff:#c792ea:#addb67:#eeeeec"
+    scroll_background = False
+    scrollback_lines = 3000
+    show_titlebar = False
+    use_system_font = False
+  [[One dark]]
+    background_color = "#1e2127"
+    background_darkness = 0.68
+    background_type = transparent
+    cursor_color = "#676c76"
+    cursor_shape = ibeam
+    font = Liberation Mono 12
+    foreground_color = "#5c6370"
+    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
+    scroll_background = False
+    scrollback_lines = 3000
+    show_titlebar = False
+    use_system_font = False

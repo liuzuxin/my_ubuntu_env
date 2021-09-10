@@ -12,14 +12,14 @@ sudo apt install gnome-tweak-tool
 sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf
 
 mkdir ~/.themes
-tar xf Mojave-dark.tar.xz
+tar xf config/Mojave-dark.tar.xz
 cp -r Mojave-dark ~/.themes/
 
 mkdir ~/.icons
-tar xf Mojave-CT-Classic.tar.xz
+tar xf config/Mojave-CT-Classic.tar.xz
 cp -r Mojave-CT-Classic ~/.icons/
 
-unzip -qq macOS\ Cursor\ Set.zip
+unzip -qq config/macOS\ Cursor\ Set.zip
 mv macOS\ Cursor\ Set ~/.icons/
 
 echo ""
