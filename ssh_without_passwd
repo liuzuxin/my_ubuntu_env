@@ -77,3 +77,7 @@ Host zuliu-desktop (name of the host)
   IdentityFile ~/.ssh/id_rsa
 ```
 Then in VScode, run `Remote-SSH: Open Configuration File` in the commmand palette and select this config file.
+
+## Mount remote folder to local via sshfs
+
+See the second answer in https://askubuntu.com/questions/412477/mount-remote-directory-using-ssh
