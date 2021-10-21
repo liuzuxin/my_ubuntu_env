@@ -1,6 +1,15 @@
 ## How to mount a hard disk with certain permission
 https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/
 
+## How to mount a remote disk to your local machine
+
+```
+alias mount1="sshfs zuxin@GPU1:/home/zuxin /exp/gpu1"
+alias mount2="sshfs zuxin@safeai-gpu2.andrew.cmu.edu:/home/zuxin /exp/gpu2"
+alias mount3="sshfs zuxin@safeai-gpu2.andrew.cmu.edu:/home/zuxin /exp/gpu3"
+alias mountd="sshfs zuxin@safeai-dataserver.andrew.cmu.edu:/home/zuxin /exp/data"
+```
+
 
 ## Tmux
 
