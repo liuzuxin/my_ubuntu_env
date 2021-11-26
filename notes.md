@@ -2,14 +2,28 @@
 https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/
 
 ## How to mount a remote disk to your local machine
+Put the following command to your bashrc, and call this `mount1` command whenever you want to mount the remote disk to your local machine.
 
 ```
-alias mount1="sshfs zuxin@GPU1:/home/zuxin /exp/gpu1"
-alias mount2="sshfs zuxin@safeai-gpu2.andrew.cmu.edu:/home/zuxin /exp/gpu2"
-alias mount3="sshfs zuxin@safeai-gpu2.andrew.cmu.edu:/home/zuxin /exp/gpu3"
-alias mountd="sshfs zuxin@safeai-dataserver.andrew.cmu.edu:/home/zuxin /exp/data"
+alias mount1="sudo umount -l /your_local_dir || echo \"not mounted but it is ok\" && sshfs username@serverIP:/server/dir /your_local_dir"
+```
+For instance:
+```
+alias mount1="sudo umount -l /exp/gpu1 || echo \"not mounted but it is ok\" && sshfs zuxin@GPU1:/home/zuxin /exp/gpu1"
+alias mount2="sudo umount -l /exp/gpu2 || echo \"not mounted but it is ok\" && sshfs zuxin@safeai-gpu2.andrew.cmu.edu:/home/zuxin /exp/gpu2"
+alias mount3="sudo umount -l /exp/gpu3 || echo \"not mounted but it is ok\" && sshfs zuxin@safeai-gpu3.andrew.cmu.edu:/home/zuxin /exp/gpu3"
+alias mountd="sudo umount -l /exp/data || echo \"not mounted but it is ok\" && sshfs zuxin@safeai-dataserver.andrew.cmu.edu:/home/zuxin /exp/data"
+
 ```
 
+To facilitate ssh, I will use the following alias:
+```
+alias gpu1="ssh zuxin@safeai-gpu1.andrew.cmu.edu"
+alias gpu2="ssh zuxin@safeai-gpu2.andrew.cmu.edu"
+alias gpu3="ssh zuxin@safeai-gpu3.andrew.cmu.edu"
+alias data="ssh zuxin@safeai-dataserver.andrew.cmu.edu"
+
+```
 
 ## Tmux
 

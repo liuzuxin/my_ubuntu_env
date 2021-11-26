@@ -14,4 +14,4 @@ echo "export ROS_IP=localhost" >> ~/.bashrc
 # wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_uninstall_noetic.sh && chmod +x ./ros_uninstall_noetic.sh && ./ros_uninstall_noetic.sh
 
 pip install empy
-pip install catkin-pkg
+pip install catkin-pkg rospkg
