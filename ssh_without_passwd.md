@@ -82,6 +82,6 @@ Then in VScode, run `Remote-SSH: Open Configuration File` in the commmand palett
 
 See the second answer in https://askubuntu.com/questions/412477/mount-remote-directory-using-ssh
 For Mac user: https://www.itsfullofstars.de/2022/03/mount-a-remote-directory-via-ssh-on-macos-sshfs/
-'''
+```
 sudo sshfs -o allow_other,defer_permissions,IdentityFile=~/.ssh/id_rsa zuxin@safeai-dataserver.andrew.cmu.edu:/mnt/zuxin ./dataserver
-'''
+```
