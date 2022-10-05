@@ -1,3 +1,12 @@
+## How to find files/dirs
+See [here](https://askubuntu.com/questions/123305/how-to-find-a-folder-on-my-server-with-a-certain-name)
+```
+find folder_full_path -name exampledocs -type d
+```
+`-d` means directory.
+
+
+
 ## How to mount a hard disk with certain permission
 https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/
 
