@@ -5,6 +5,15 @@ find folder_full_path -name exampledocs -type d
 ```
 `-d` means directory.
 
+## How to check disk usage
+Check each folder's space
+```
+sudo du -sh /home/*
+```
+Check percentage:
+```
+sudo df -h /home
+```
 
 
 ## How to mount a hard disk with certain permission
