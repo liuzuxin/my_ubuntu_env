@@ -8,6 +8,7 @@ git clone https://github.com/liuzuxin/my_ubuntu_env.git
 cd my_ubuntu_env
 cd ubuntu_20_04_config && sh config_tmux.sh
 
+# this step is not necessary for some server
 cd /home/$(whoami)/Downloads
 wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh  # This link might be updated based on your pc plafform
 bash Anaconda3-2022.10-Linux-x86_64.sh
@@ -16,6 +17,8 @@ source /home/$(whoami)/.bashrc
 
 # then generate ssh key and add to github
 sudo apt-get install ssh
+sudo apt-get install git-lfs
+git-lfs install
 ssh-keygen -t ed25519 -C "zuxin1997@gmail.com"
 
 eval "$(ssh-agent -s)"
