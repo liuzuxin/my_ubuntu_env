@@ -5,6 +5,19 @@ find folder_full_path -name exampledocs -type d
 ```
 `-d` means directory.
 
+## How to upload python package
+```
+pip install twine
+rm -r dist/
+python setup.py sdist bdist_wheel
+twine upload dist/*
+```
+One way to generate a list of minimum dependencies for your Python package is to use a tool called pipreqs. Here are the steps to use pipreqs:
+```
+pip install pipreqs
+```
+Navigate to your project directory. Run `pipreqs .` to generate a list of minimum dependencies for your project. This command will scan your code for import statements and generate a list of required packages. Once the command completes, you will find a `requirements.txt` file in your project directory that contains the list of minimum dependencies. Copy the contents into the `install_requires` field in your `setup.py` file.
+
 ## How to check disk usage
 Check each folder's space
 ```
