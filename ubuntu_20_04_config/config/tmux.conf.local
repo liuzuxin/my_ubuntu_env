@@ -4,6 +4,9 @@
 #         without any warranty.
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
+# Move cursor by word using Option + Left arrow and Option + Right arrow
+bind-key -n M-Left send-keys -R M-b
+bind-key -n M-Right send-keys -R M-f
 
 # -- navigation ----------------------------------------------------------------
 
